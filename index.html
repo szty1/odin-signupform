@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Rubik:ital,wght@0,300;0,900;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js" defer></script>
     <title>Sign-up form</title>
@@ -22,35 +22,37 @@
             <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui recusandae quasi porro cupiditate nulla eligendi eos quod consectetur obcaecati consequatur, ipsam sequi repudiandae animi repellat cum ullam fugiat neque aperiam.</h3>
             <form action="" method="post">
                 <h3>Let's do this!</h3>
-                <div>
-                    <label for="firstName">First name *</label>
-                    <input type="text" id="firstName">
-                    <p class="errormessage">Error message</span>
-                </div>
-                <div>
-                    <label for="lastName">Last name *</label>
-                    <input type="text" id="lastName">
-                    <p class="errormessage">Error message</span>
-                </div>
-                <div>
-                    <label for="email">Email *</label>
-                    <input type="text" id="email">
-                    <p class="errormessage">Error message</span>
-                </div>
-                <div>
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="text" id="phoneNumber">
-                    <p class="errormessage">Error message</span>
-                </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" id="password">
-                    <p class="errormessage">Error message</span>
-                </div>
-                <div>
-                    <label for="confirmPassword">Confirm password</label>
-                    <input type="password" id="confirmPassword">
-                    <p class="errormessage">Error message</span>
+                <div class="inputboxes">
+                    <div>
+                        <label for="firstName">First name *</label>
+                        <input type="text" id="firstName">
+                        <p class="errormessage">Error message</span>
+                    </div>
+                    <div>
+                        <label for="lastName">Last name *</label>
+                        <input type="text" id="lastName">
+                        <p class="errormessage">Error message</span>
+                    </div>
+                    <div>
+                        <label for="email">Email *</label>
+                        <input type="text" id="email">
+                        <p class="errormessage">Error message</span>
+                    </div>
+                    <div>
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" id="phoneNumber">
+                        <p class="errormessage">Error message</span>
+                    </div>
+                    <div>
+                        <label for="password">Password *</label>
+                        <input type="password" id="password">
+                        <p class="errormessage">Error message</span>
+                    </div>
+                    <div>
+                        <label for="confirmPassword">Confirm password *</label>
+                        <input type="password" id="confirmPassword">
+                        <p class="errormessage">Error message</span>
+                    </div>
                 </div>
                 <button type="submit">Create Account</button>
             </form>

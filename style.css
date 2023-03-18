@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
 
 .container {
@@ -43,41 +44,60 @@ body {
 
 .content h3 {
     font-size: 1.6rem;
+    font-weight: 500;
 }
 
-form {
+form > h3 {
+    flex: 1 1 100%;
+    margin: 40px 0;
+}
+
+.inputboxes {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
-form>h3 {
-    flex: 1 1 100%;
-}
-
-form>div {
+.inputboxes > div {
     display: flex;
     flex-direction: column;
-    flex: 0 1 40%;
+    flex: 0 1 45%;
 }
 
-form>div>p {
+.inputboxes > div > p {
     margin: 0;
     font-size: .9rem;
     color: red;
+    display: none;
 }
 
-form>div>label {
+.inputboxes > div > label {
     margin: 0;
-    font-weight: 700;
+    font-weight: 500;
     font-size: .9rem;
     text-transform: uppercase;
 }
 
-form>div>input {
+.inputboxes > div > input {
     padding: 10px;
     border: #ccc 1px solid;
     border-radius: 5px;
     font-size: 1.2rem;
+}
+
+form > button {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color:#fff;
+    text-transform: uppercase;
+    background-color:rgb(57, 16, 122);
+    border-radius: 5px;
+    padding: 15px 50px;
+    margin: 40px 0;
+}
+
+.login {
+    margin-top: 3rem;
 }
 
