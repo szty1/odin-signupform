@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Rubik:ital,wght@0,300;0,900;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Rubik:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js" defer></script>
     <title>Sign-up form</title>
@@ -19,7 +19,8 @@
             </div>
         </div>
         <div class="content">
-            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui recusandae quasi porro cupiditate nulla eligendi eos quod consectetur obcaecati consequatur, ipsam sequi repudiandae animi repellat cum ullam fugiat neque aperiam.</h3>
+            <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h3>
+            <h3>You <i>know</i> you want to.</h3>
             <form action="" method="post">
                 <h3>Let's do this!</h3>
                 <div class="inputboxes">
@@ -35,12 +36,12 @@
                     </div>
                     <div>
                         <label for="email">Email *</label>
-                        <input type="text" id="email">
+                        <input type="email" id="email">
                         <p class="errormessage">Error message</span>
                     </div>
                     <div>
                         <label for="phoneNumber">Phone Number</label>
-                        <input type="text" id="phoneNumber">
+                        <input type="tel" id="phoneNumber" pattern="[0-9*+ ]*" minlength="6" maxlength="15" placeholder="+36">
                         <p class="errormessage">Error message</span>
                     </div>
                     <div>

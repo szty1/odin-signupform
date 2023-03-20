@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-size: 16px;
     font-family: 'Rubik', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .container {
@@ -44,7 +44,7 @@ body {
 
 .content h3 {
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 form > h3 {
@@ -73,7 +73,7 @@ form > h3 {
 
 .inputboxes > div > label {
     margin: 0;
-    font-weight: 500;
+    font-weight: 300;
     font-size: .9rem;
     text-transform: uppercase;
 }
@@ -83,6 +83,14 @@ form > h3 {
     border: #ccc 1px solid;
     border-radius: 5px;
     font-size: 1.2rem;
+}
+
+.inputboxes > div > input::placeholder {
+    color: #ccc;
+}
+
+.inputboxes > div > input:invalid{
+    border-color: rgb(189, 0, 0);
 }
 
 form > button {
