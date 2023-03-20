@@ -1,20 +1,20 @@
 body {
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-size: 16px;
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
+    display: flex;
+    align-items: stretch;
 }
 
 .container {
-    height: 100%;
     display: flex;
-    align-items: center;
+    align-items: stretch;
 }
 
 .sidebar {
-    height: 100%;
     flex: 0 1 35%;
     display: flex;
     align-items: center;
@@ -38,8 +38,10 @@ body {
 }
 
 .content {
-    flex: 1;
+    flex: 2;
     padding: 3rem;
+    display: flex;
+    align-items: center;
 }
 
 .content h3 {
@@ -64,11 +66,15 @@ form > h3 {
     flex: 0 1 45%;
 }
 
-.inputboxes > div > p {
-    margin: 0;
+.inputboxes > div > p.errormessage {
+    margin: 2px 0 0 0;
     font-size: .9rem;
     color: red;
-    display: none;
+    /* display: none; */
+}
+
+.inputboxes > div > p.active {
+    display: block;
 }
 
 .inputboxes > div > label {
