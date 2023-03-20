@@ -43,7 +43,7 @@ function displayError(input) {
                 input.errormessage.textContent = "Please enter your email address!";
                 break;
             case 'password':
-                input.errormessage.textContent = "Please enter your password. (Password must be 8 to 16 characters long and contain at least one capital letter and number)";
+                input.errormessage.textContent = "Please enter your password!";
                 break;
             case 'confirmPassword':
             input.errormessage.textContent = "Please confirm your password!";

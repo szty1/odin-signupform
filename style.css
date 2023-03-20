@@ -95,8 +95,8 @@ form > h3 {
     color: #ccc;
 }
 
-.inputboxes > div > input:invalid{
-    border-color: rgb(189, 0, 0);
+.inputboxes > div > input:blank {
+    border: #ccc 1px solid;
 }
 
 form > button {
