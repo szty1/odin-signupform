@@ -12,6 +12,7 @@ function validateInput(e) {
     if (e.target.validity.valid) {
         e.target.errormessage.textContent = "";
         e.target.errormessage.className = "errormessage";
+        e.target.className = "";
     } else 
     {
         displayError(e.target);
@@ -67,6 +68,7 @@ function displayError(input) {
         } 
     }
     input.errormessage.className = "errormessage active";
+    input.className = "error";
 }
 
 function validatePasswordMatch() {
