@@ -1,11 +1,24 @@
+// adds submit event listener to the form
+
 const form = document.querySelector('form');
 form.addEventListener( 'submit', validateForm);
 
+// adds input fields to an array
+
 const inputFields = document.querySelectorAll('.inputboxes input');
+
+// links the error message fields to their respective input fields
+// adds change event listeners to the input fields
+
 inputFields.forEach ( (input) => {
     input.errormessage = document.querySelector(`#${input.id} + p.errormessage`);
     input.addEventListener ('change', validateInput);
 });
+
+// called when an input field content changes.
+// check if the input is valid.
+// if true, clear the error message and error styles
+// if false, display the appropriate error message
 
 function validateInput(e) {
     console.log(e.target.validity);
@@ -19,6 +32,10 @@ function validateInput(e) {
     }
 }
 
+// called when the form is submitted.
+// checks if all the fields are valid, prevents submit if not and displays the appropriate error message.
+// checks if a two password inputs are identical. if not, prevents submit.
+
 function validateForm(e) {
     inputFields.forEach( (input) => {
         if (!input.validity.valid) {  
@@ -30,6 +47,8 @@ function validateForm(e) {
         e.preventDefault();
     }
 }
+
+// displays the appropriate error message for the input field
 
 function displayError(input) {
     if (input.validity.valueMissing) {
@@ -70,6 +89,8 @@ function displayError(input) {
     input.errormessage.className = "errormessage active";
     input.className = "error";
 }
+
+// checks if the two passwords match. displays error message if not.
 
 function validatePasswordMatch() {
     if (inputFields[4].value !== inputFields[5].value) {
